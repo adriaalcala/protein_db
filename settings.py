@@ -2,6 +2,7 @@ from os import environ as os_environ
 eget = os_environ.get
 
 settings = {
+    'database': eget('DB_DSN', 'mysql+pymysql://puser:puser@mysql/protein_db'),
     'database_async': {
         'host': eget('DB_HOST', 'mysql'),
         'port': int(eget('DB_PORT', 3306)),
