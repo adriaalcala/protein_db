@@ -1,0 +1,12 @@
+.cache/*
+*.log
+*.pyc
+__pycache__
+.vscode
+
+*.sublime-project
+*.sublime-workspace
+.env*
+.env_dev
+.coverage
+logs/*
